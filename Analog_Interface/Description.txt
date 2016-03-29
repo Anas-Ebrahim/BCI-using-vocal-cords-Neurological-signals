@@ -1,0 +1,1 @@
+This folder contains the Files related to Analog Interface (Hardware) part in the Project
