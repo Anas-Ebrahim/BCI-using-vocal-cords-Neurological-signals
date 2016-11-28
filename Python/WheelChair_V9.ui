@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>480</height>
+   </rect>
+  </property>
+  <property name="palette">
+   <palette>
+    <active>
+     <colorrole role="Base">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>255</red>
+        <green>255</green>
+        <blue>255</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Window">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>255</red>
+        <green>255</green>
+        <blue>255</blue>
+       </color>
+      </brush>
+     </colorrole>
+    </active>
+    <inactive>
+     <colorrole role="Base">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>255</red>
+        <green>255</green>
+        <blue>255</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Window">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>255</red>
+        <green>255</green>
+        <blue>255</blue>
+       </color>
+      </brush>
+     </colorrole>
+    </inactive>
+    <disabled>
+     <colorrole role="Base">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>255</red>
+        <green>255</green>
+        <blue>255</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Window">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>255</red>
+        <green>255</green>
+        <blue>255</blue>
+       </color>
+      </brush>
+     </colorrole>
+    </disabled>
+   </palette>
+  </property>
+  <property name="cursor">
+   <cursorShape>BlankCursor</cursorShape>
+  </property>
+  <property name="windowTitle">
+   <string>Voice Controlled Wheelchair</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>Icons/noun_51146_cc.png</normaloff>Icons/noun_51146_cc.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-image: url(:/Images/Icons/BGSmall.png);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="Forward">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>60</y>
+      <width>131</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#Forward {background-image: url(:/Images/Icons/Buttons/ForwardReleased.png);
+background-color: transparent;}
+#Forward:pressed {background-image: url(:/Images/Icons/Buttons/ForwardPressed.png);}
+
+
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>100</width>
+      <height>100</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Back">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>300</y>
+      <width>131</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#Back{background-image: url(:/Images/Icons/Buttons/BackReleased.png);
+background-color: transparent;}
+#Back:pressed {background-image: url(:/Images/Icons/Buttons/BackPressed.png);}
+
+
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>BackOn.png</normaloff>BackOn.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>100</width>
+      <height>100</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Right">
+    <property name="geometry">
+     <rect>
+      <x>490</x>
+      <y>180</y>
+      <width>131</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#Right {background-image: url(:/Images/Icons/Buttons/RightReleased.png);
+background-color: transparent;}
+#Right:pressed {background-image: url(:/Images/Icons/Buttons/RightPressed.png);}
+
+
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>RightOn.png</normaloff>RightOn.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>100</width>
+      <height>100</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Left">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>180</y>
+      <width>131</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#Left{background-image: url(:/Images/Icons/Buttons/LeftReleased.png);
+background-color: transparent;}
+#Left:pressed {background-image: url(:/Images/Icons/Buttons/LeftPressed.png);}
+
+
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>LeftOn.png</normaloff>LeftOn.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>100</width>
+      <height>100</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Forward_Left">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>60</y>
+      <width>131</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#Forward_Left {background-image: url(:/Images/Icons/Buttons/ForwardLeftReleased.png);
+background-color: transparent;}
+#Forward_Left:pressed {background-image: url(:/Images/Icons/Buttons/ForwardLeftPressed.png);}
+
+
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>ForwardLeftOn.png</normaloff>ForwardLeftOn.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>100</width>
+      <height>100</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Back_Left">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>300</y>
+      <width>131</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#Back_Left{background-image: url(:/Images/Icons/Buttons/BackLeftReleased.png);
+background-color: transparent;}
+#Back_Left:pressed {background-image: url(:/Images/Icons/Buttons/BackLeftPressed.png);}
+
+
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>BackLeftOn.png</normaloff>BackLeftOn.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>100</width>
+      <height>100</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Back_Right">
+    <property name="geometry">
+     <rect>
+      <x>490</x>
+      <y>300</y>
+      <width>131</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#Back_Right {background-image: url(:/Images/Icons/Buttons/BackRightReleased.png);
+background-color: transparent;}
+#Back_Right:pressed {background-image: url(:/Images/Icons/Buttons/BackRightPressed.png);}
+
+
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>BackRightOn.png</normaloff>BackRightOn.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>100</width>
+      <height>100</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Forward_Right">
+    <property name="geometry">
+     <rect>
+      <x>490</x>
+      <y>60</y>
+      <width>131</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>BlankCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#Forward_Right {background-image: url(:/Images/Icons/Buttons/ForwardRightReleased.png);
+background-color: transparent;}
+#Forward_Right:pressed {background-image: url(:/Images/Icons/Buttons/ForwardRightPressed.png);}
+
+
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>ForwardRightOn.png</normaloff>ForwardRightOn.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>100</width>
+      <height>100</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="RotateRight">
+    <property name="geometry">
+     <rect>
+      <x>640</x>
+      <y>180</y>
+      <width>131</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#RotateRight {background-image: url(:/Images/Icons/Buttons/RotateRightReleased.png);
+background-color: transparent;}
+#RotateRight:pressed {background-image: url(:/Images/Icons/Buttons/RotateRightPressed.png);}
+
+
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>RightOn.png</normaloff>RightOn.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>100</width>
+      <height>100</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="RotateLeft">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>180</y>
+      <width>131</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#RotateLeft{background-image: url(:/Images/Icons/Buttons/RotateLeftReleased.png);
+background-color: transparent;}
+#RotateLeft:pressed {background-image: url(:/Images/Icons/Buttons/RotateLeftPressed.png);}
+
+
+
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>LeftOn.png</normaloff>LeftOn.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>100</width>
+      <height>100</height>
+     </size>
+    </property>
+   </widget>
+   <zorder>Back</zorder>
+   <zorder>Right</zorder>
+   <zorder>Left</zorder>
+   <zorder>Forward_Left</zorder>
+   <zorder>Back_Left</zorder>
+   <zorder>Back_Right</zorder>
+   <zorder>Forward_Right</zorder>
+   <zorder>Forward</zorder>
+   <zorder>RotateRight</zorder>
+   <zorder>RotateLeft</zorder>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources>
+  <include location="Resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>

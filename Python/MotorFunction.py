@@ -9,17 +9,17 @@ Stop=0
 #################################################
 # Choose Your Pins
 
-FrDir=1 #forward  left
-FrPwm=5 #forward left PWM
+FrDir=5 #forward  left
+FrPwm=8 #forward left PWM
  
 FlDir=6 #forward left
-FlPwm=13 #forward left PWM
+FlPwm=7 #forward left PWM
  
-BrDir=8 #Backword right
-BrPwm=9 #Backword right PWM
+BrDir=13 #Backword right
+BrPwm=12 #Backword right PWM
  
-BlDir=10 #Backword left
-BlPwm=11 #Backword left PWM
+BlDir=19 #Backword left
+BlPwm=16 #Backword left PWM
 
 #pwm DutyCycle
 
@@ -125,8 +125,8 @@ def MotorLeft():
 
  MotorWrite("fr",ReverseDir,FrDuty )
  MotorWrite("fl",ForwardDir,FlDuty )
- MotorWrite("br",ReverseDir,BrDuty )
- MotorWrite("bl",ForwardDir,BlDuty )
+ MotorWrite("br",ForwardDir,BrDuty )
+ MotorWrite("bl",ReverseDir,BlDuty )
 
 def ForwardRight():
 
@@ -167,7 +167,7 @@ def BackLeft():
 def RotateRight():
  MotorWrite("fr",ReverseDir,FrDuty)
  MotorWrite("fl",ForwardDir,FlDuty )
- MotorWrite("br",ForwardDir,BrDuty )
+ MotorWrite("br",ReverseDir,BrDuty )
  MotorWrite("bl",ForwardDir,BlDuty )
     
  return
@@ -176,7 +176,7 @@ def RotateLeft():
 
  MotorWrite("fr", ForwardDir,FrDuty )
  MotorWrite("fl", ReverseDir,FlDuty )
- MotorWrite("br", ReverseDir,BrDuty )
+ MotorWrite("br", ForwardDir,BrDuty )
  MotorWrite("bl", ReverseDir,BlDuty )
  
 
@@ -205,7 +205,7 @@ def Move(Movemonet):
    RotateRight()
   
  elif  Movemonet=='Rotate_Left' :
-   BackLeft()
+   RotateLeft()
   
  elif  Movemonet=='Back_Right' :
    BackRight()
